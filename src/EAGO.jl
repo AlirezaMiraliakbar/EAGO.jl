@@ -11,14 +11,14 @@
 ################################################################################
 
 __precompile__()
-# this is a test comment for alireza to test his commit to EAGO
+
 module EAGO
 
     using MathOptInterface
     import MathOptInterface
     import MathOptInterface.Nonlinear: DEFAULT_MULTIVARIATE_OPERATORS, DEFAULT_UNIVARIATE_OPERATORS
     using Reexport, Requires, Cassette, IntervalArithmetic, DocStringExtensions,
-          FastRounding, SpecialFunctions, Ipopt, Cbc, Printf, PrettyTables
+          FastRounding, SpecialFunctions, Ipopt, GLPK, Printf, PrettyTables
 
     using JuMP
     import JuMP
