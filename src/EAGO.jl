@@ -143,7 +143,7 @@ module EAGO
            ResProblem, AbstractSIPAlgo, AbstractSubproblemType
     include(joinpath(@__DIR__, "eago_semiinfinite", "semiinfinite.jl"))
 
-    include(joinpath(@__DIR__, "subsolvers", "cbc.jl"))
+    include(joinpath(@__DIR__, "subsolvers", "glpk.jl"))
     include(joinpath(@__DIR__, "subsolvers", "ipopt.jl"))
     function __init__()
         #@require Cbc="9961bab8-2fa3-5c5a-9d89-47fab24efd76"        include(joinpath(@__DIR__, "subsolvers", "cbc.jl"))
